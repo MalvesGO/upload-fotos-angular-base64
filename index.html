@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Upload de fotos com AngularJS usando Base64</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-base64-upload/dist/angular-base64-upload.min.js"></script>
+	<script>
+		var app = angular.module('app', ['naif.base64']);
+		app.controller('uploadCtrl', function($scope) {
+			$scope.upload = function(photo) {
+				// O código da sua imagem em Base64 é representado por photo.base64
+				$scope.uploadSuccess = true;
+			};
+		});
+	</script>
+</head>
+<body ng-controller="uploadCtrl">
+	<form name="uploadForm">
+		<input type="file" accept="image/*" ng-model="photo" base-sixty-four-input>
+		<button ng-click="upload(photo)">Salvar</button>
+	</form>
+	<p ng-if="uploadSuccess">Sua imagem em Base64: {{photo.base64}}</p>
+</body>
+</html>

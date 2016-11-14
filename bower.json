@@ -1,0 +1,26 @@
+{
+  "name": "upload-fotos-angular-base64",
+  "description": "Simples aplicação para upload de imagens em base64 com AngularJS.",
+  "main": "",
+  "keywords": [
+    "angularjs",
+    "javascript",
+    "base64"
+  ],
+  "authors": [
+    "Hélio Júnior <heliojuniorkroger@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-base64-upload": "^0.1.19"
+  }
+}
